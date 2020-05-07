@@ -5,7 +5,8 @@ import {
   useDeviceOrientation,
 } from "@react-native-community/hooks";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
+import ViewImage from "./app/screens/ViewImage";
 
 export default function App() {
-  return <WelcomeScreen />;
+  return <ViewImage />;
 }
