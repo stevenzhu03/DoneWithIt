@@ -3,7 +3,8 @@ import { Image, StyleSheet, View } from "react-native";
 
 function ViewImage(props) {
   return (
-    <View styles={styles.container}>
+    <View style={styles.container}>
+      <View styl={styles.closeIcon}></View>
       <Image
         resizeMode="contain"
         style={styles.image}
@@ -14,8 +15,16 @@ function ViewImage(props) {
 }
 
 const styles = StyleSheet.create({
+  closeIcon: {
+    width: 50,
+    height: 50,
+    backgroundColor: "#fc5c65",
+    position: "absolute",
+    top: 40,
+    left: 30,
+  },
   container: {
-    backgroundColor: "blue",
+    backgroundColor: "#000",
     flex: 1,
   },
   image: {
